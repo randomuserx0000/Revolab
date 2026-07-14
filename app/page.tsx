@@ -11,7 +11,7 @@ export default function Home() {
   
   // Cuenta regresiva - Configura aquí los días iniciales
   const INITIAL_DAYS = 56;
-  const LAUNCH_DATE = new Date('2026-09-08'); // Fecha de lanzamiento
+  const LAUNCH_DATE = new Date(2026, 8, 8); // Fecha de lanzamiento (mes 0-indexado: 8 = septiembre)
   
   const [daysRemaining, setDaysRemaining] = useState(INITIAL_DAYS);
   
