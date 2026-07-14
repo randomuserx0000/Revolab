@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import ChatWidget from "./components/ChatWidget";
 
 export default function Home() {
   const [primerImageSize, setPrimerImageSize] = useState({ width: 700, height: 500 });
@@ -9,8 +10,8 @@ export default function Home() {
   const [maletaSize, setMaletaSize] = useState({ width: 400, height: 300 });
   
   // Cuenta regresiva - Configura aquí los días iniciales
-  const INITIAL_DAYS = 119;
-  const LAUNCH_DATE = new Date('2026-08-08'); // Fecha de lanzamiento
+  const INITIAL_DAYS = 56;
+  const LAUNCH_DATE = new Date('2026-09-08'); // Fecha de lanzamiento
   
   const [daysRemaining, setDaysRemaining] = useState(INITIAL_DAYS);
   
@@ -703,8 +704,10 @@ export default function Home() {
             </div>
           </div>
         </footer>
-        
+
       </div>
+
+      <ChatWidget />
 
       <style jsx>{`
         * {
